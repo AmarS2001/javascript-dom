@@ -1,0 +1,16 @@
+<!--The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, XML documents, and their component parts (e.g. elements).
+A Web page is a document.
+The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.
+In the beginning, JavaScript and the DOM were tightly intertwined, but eventually, they evolved into separate entities.
+Implementations of the DOM can be built for any language, as this Python
+innerHTML- read or write from or to the html element.
+-->
+
+
+<body>
+    <p id="intro">Hello World!</p>
+   <h2 id="demo"></h2>
+<script>
+ var me = document.getElementById("intro");
+ var x=document.getElementById("demo").innerHTML = "Welcome to DOM";
+ </script>

@@ -1,0 +1,22 @@
+<!--If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc),
+use the querySelectorAll() method.
+querySelector() -
+Returns the first matching Element node within the node's subtree. If no matching node is found, null is returned.
+querySelectorAll()-
+Returns a NodeList containing all matching Element nodes within the node's subtree, or an empty NodeList if no matches are found.-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Finding HTML Elements by Query Selector</h2>
+        <p>Hello World!</p>
+        <p class="intro">The DOM is very useful.</p>
+        <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+        <p id="demo"></p>
+        <script>
+            var x = document.querySelectorAll("p.intro");
+            document.getElementById("demo").innerHTML =
+                    'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+        </script>
+
+    </body>
+</html>

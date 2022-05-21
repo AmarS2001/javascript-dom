@@ -1,0 +1,19 @@
+<!-- Elements with same class name will be interpreted like arrays.
+x[0] -  represents A SECTION
+x[1] - represents B SECTION-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hello World!</p>
+<p class="intro">A SECTION</p> 
+<p class="intro">B SECTION</p>
+<h2 id="demo"></h2>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = "Content inside p tag is " + x[0].innerHTML;
+</script>
+
+</body>
+</html>
+
